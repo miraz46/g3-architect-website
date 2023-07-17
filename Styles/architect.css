@@ -1,0 +1,161 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header section */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner section */
+.banner-section {
+    text-align: center;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.banner-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 25px;
+    background: #FF900E;
+    margin-top: 50px;
+}
+
+.banner-section img {
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+/* Quick Feature Section */
+.feature-container {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+    gap: 76px;
+    justify-content: center;
+    background: #FFF;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+}
+
+.quick-list-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.quick-list {
+    color: #727272;
+
+}
+
+.of-our {
+    color: #131313;
+
+}
+
+.features {
+    color: #FF900E;
+
+}
+
+
+
+
+
+
+/* Small Device */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+
+    }
+    .img-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    
+    }
+
+}
+
+/* Medium or Tablet Device */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .feature-container {
+        flex-direction: column;
+
+    }
+    .img-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    
+    }
+}
